@@ -25,8 +25,8 @@
         </style>
 </head>
     <body>
-	<audio autoplay="autopaly">
-					<source src="http://120.24.64.210/chichi/resources/tanabata2015/Love-Music.mp3" type="audio/mp3" />
+	<audio autoplay="autopaly" id="js_auto_play" src="http://120.24.64.210/chichi/resources/tanabata2015/Love-Music.mp3">
+					<!-- <source src="http://120.24.64.210/chichi/resources/tanabata2015/Love-Music.mp3" type="audio/mp3" /> -->
 			</audio>  	 
         <div id="main">
             <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://rj.baidu.com/soft/detail/14744.html?ald">Chrome</a>)或者火狐(<a href="http://rj.baidu.com/soft/detail/11843.html">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
@@ -59,6 +59,9 @@
 
     <script>
     (function(){
+    	//自动播放
+    	$('#car_audio').play();
+    	
         var canvas = $('#canvas');
 		
         if (!canvas[0].getContext) {
