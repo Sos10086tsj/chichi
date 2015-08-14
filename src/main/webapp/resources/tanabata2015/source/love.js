@@ -82,14 +82,14 @@
             point  : point,
             scale  : scale,
             color  : color,
-            figure : new Heart(),
+            figure : new Heart()
         }
 
         this.cirle = {
             point  : point,
             scale  : scale,
             color  : color,
-            radius : 5,
+            radius : 5
         }
     }
     Seed.prototype = {
@@ -169,7 +169,7 @@
             ctx.moveTo(0, 0);
             ctx.scale(0.75, 0.75);
             ctx.font = "13px 微软雅黑,Verdana"; // 字号肿么没有用? (ˉ(∞)ˉ)
-            ctx.fillText("To Chichi", 28, 10);
+            ctx.fillText("Open My Heart!", 28, 10);
             ctx.restore();
         },
         clear: function() {
