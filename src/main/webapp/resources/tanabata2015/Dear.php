@@ -1,21 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-		<title>Chinese Valentine's Day Gift to Chichi</title>	  
+		<title>Chinese Valentine's Day Gift</title>	  
        
-        <link type="text/css" rel="stylesheet" href="/chichi/resources/tanabata2015/source/default.css">
-		<script type="text/javascript" src="/chichi/resources/tanabata2015/source/jquery.min.js"></script>
-		<script type="text/javascript" src="/chichi/resources/tanabata2015/source/jscex.min.js"></script>
-		<script type="text/javascript" src="/chichi/resources/tanabata2015/source/jscex-parser.js"></script>
-		<script type="text/javascript" src="/chichi/resources/tanabata2015/source/jscex-jit.js"></script>
-		<script type="text/javascript" src="/chichi/resources/tanabata2015/source/jscex-builderbase.min.js"></script>
-		<script type="text/javascript" src="/chichi/resources/tanabata2015/source/jscex-async.min.js"></script>
-		<script type="text/javascript" src="/chichi/resources/tanabata2015/source/jscex-async-powerpack.min.js"></script>
-		<script type="text/javascript" src="/chichi/resources/tanabata2015/source/functions.js" charset="utf-8"></script>
-		<script type="text/javascript" src="/chichi/resources/tanabata2015/source/love.js" charset="utf-8"></script>
+        <link type="text/css" rel="stylesheet" href="source/default.css">
+		<script type="text/javascript" src="source/jquery.min.js"></script>
+		<script type="text/javascript" src="source/jscex.min.js"></script>
+		<script type="text/javascript" src="source/jscex-parser.js"></script>
+		<script type="text/javascript" src="source/jscex-jit.js"></script>
+		<script type="text/javascript" src="source/jscex-builderbase.min.js"></script>
+		<script type="text/javascript" src="source/jscex-async.min.js"></script>
+		<script type="text/javascript" src="source/jscex-async-powerpack.min.js"></script>
+		<script type="text/javascript" src="source/functions.js" charset="utf-8"></script>
+		<script type="text/javascript" src="source/love.js" charset="utf-8"></script>
 	    <style type="text/css">
 <!--
 .STYLE1 {color: #666666}
@@ -24,34 +22,43 @@
 </head>
     <body>
 	<audio autoplay="autopaly">
-					<source src="/chichi/resources/tanabata2015/Love-Music.mp3" type="audio/mp3" />
+					<source src="Love-Music.mp3" type="audio/mp3" />
 			</audio>  	 
         <div id="main">
             <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://rj.baidu.com/soft/detail/14744.html?ald">Chrome</a>)或者火狐(<a href="http://rj.baidu.com/soft/detail/11843.html">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
              <div id="wrap">
                 <div id="text">
 			        <div id="code">
-			      		<font color="#FF0000">
-				  		<span class="say">Dear my love,</span><br>
-				  		<span class="say">luck to met u,</span><br>
-				  		<span class="say">grateful to have you accompany these days,</span><br>
-						<span class="say">I'll hold your heart carefully,</span><br>
+			      <font color="#FF0000">  	<span class="say">亲爱的<?php echo $_GET["you"]; ?></span><br>
+				  <span class="say"><?php echo $_GET["yi"]; ?></span><br>
+						<!--<span class="say"> </span><br>
+<span class="say"> <?php echo $_GET["er"]; ?></span><br>
 						<span class="say"> </span><br>
-                        <span class="say"><span class="space"></span>Love u foreaver!</span><br>
-						<span class="say"><span class="space"></span>Paris</span>
-			  			</font></p>
-			  		</div>
-                	</div>
-                		<div id="clock-box">
-                    		<span class="STYLE1"></span><font color="#33CC00">Met & full in love with u</font>
-							<span class="STYLE1"> over</span>
-                  		<div id="clock"></div>
-              		</div>
+						
+						
+			        	
+			        	<span class="say"><?php echo $_GET["san"]; ?></span><br>
+<span class="say"><?php echo $_GET["si"]; ?></span><br>-->
+
+ <span class="say">我想在这里对你说</span><br>
+						<span class="say"> </span><br>
+                        <span class="say"><span class="space"></span><?php echo $_GET["wu"]; ?></span><br>
+						<span class="say"><span class="space"></span> <?php echo $_GET["me"]; ?></span>
+			  </font></p>
+      </div>
+                </div>
+                <div id="clock-box">
+                    <span class="STYLE1"></span><font color="#33CC00">截至今天我们已经</font>
+<span class="STYLE1"> 默默走过了</span>
+                  <div id="clock"></div>
+              </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
             </div>
+            
         </div>
+    
     <script>
-</script>
+    </script>
 
     <script>
     (function(){
@@ -181,11 +188,11 @@
 
         var textAnimate = eval(Jscex.compile("async", function () {
 		    var together = new Date();
-		    together.setFullYear(2015, 3, 9);
-		    together.setHours(10);
-		    together.setMinutes(55);
-		    together.setSeconds(29);
-		    together.setMilliseconds(0);
+		    together.setFullYear(<?php echo $_GET["year"]; ?>,<?php echo $_GET["yue"]; ?>-1,<?php echo $_GET["ri"]; ?>); 			//时间年月日
+		    together.setHours(0);						//小时	
+		    together.setMinutes(53);					//分钟
+		    together.setSeconds(0);					//秒前一位
+		    together.setMilliseconds(2);				//秒第二位
 
 		    $("#code").show().typewriter();
             $("#clock-box").fadeIn(500);
@@ -210,10 +217,10 @@
     })();
     </script>
 	<script>
-        var imgUrl = "http://120.24.64.210/chichi/resources/tanabata2015/logo.jpg";
-        var lineLink = "http://120.24.64.210/chichi/resources/tanabata2015/Dear.php?me=%e4%bd%a0%e4%ba%b2%e7%88%b1%e7%9a%84%e5%b0%8f%e9%9d%9e&you=%e5%b0%8f%e8%95%be&yi=%e5%ae%9d%e8%b4%9d%ef%bc%8c%e8%af%b4%e5%ae%9e%e8%af%9d%ef%bc%8c%e4%b8%8d%e7%9f%a5%e4%b8%8d%e8%a7%89%e6%88%91%e4%bb%ac%e5%b7%b2%e7%bb%8f%e8%ae%a4%e8%af%86%e4%ba%86%e4%b8%80%e6%ae%b5%e6%97%b6%e9%97%b4%e4%ba%86%ef%bc%8c%e7%9f%a5%e9%81%93%e5%90%97%ef%bc%8c%e8%ae%a4%e8%af%86%e4%bd%a0%e7%9a%84%e8%bf%99%e4%ba%9b%e6%97%a5%e5%ad%90%e6%98%af%e6%88%91%e8%bf%99%e8%be%88%e5%ad%90%e6%9c%80%e5%b9%b8%e7%a6%8f%e7%9a%84%e6%97%b6%e9%97%b4%ef%bc%8c%e6%83%85%e4%ba%ba%e8%8a%82%e5%bf%ab%e5%88%b0%e4%ba%86%ef%bc%8c%e4%bd%86%e6%98%af%e6%88%91%e4%b8%8d%e8%83%bd%e9%99%aa%e4%bc%b4%e5%88%b0%e4%bd%a0%e8%ba%ab%e8%be%b9%ef%bc%8c%e6%89%80%e4%bb%a5%e8%8a%b1%e4%ba%86%e5%bf%ab%e4%b8%80%e5%a4%a9%e7%9a%84%e6%97%b6%e9%97%b4%e5%81%9a%e4%ba%86%e8%bf%99%e4%b8%aa%e5%8d%a1%e7%89%87%e9%80%81%e7%bb%99%e4%bd%a0%ef%bc%8c%e8%bf%98%e7%89%b9%e6%84%8f%e9%80%89%e4%ba%86%e4%b8%80%e9%a6%96%e6%ad%8c%e5%90%ac%e7%9d%80%e5%be%88%e8%88%92%e6%9c%8d%e7%9a%84%e5%91%a2%ef%bc%8c%e6%9c%80%e5%90%8e%e6%88%91%e6%83%b3%e5%af%b9%e4%bd%a0%e8%af%b4%ef%bc%9aI+Love+U+&wu=%e6%88%91%e7%9c%9f%e7%9a%84%e5%a5%bd%e6%83%b3%e5%a5%bd%e6%83%b3%e4%bd%a0&year=2015&yue=4&ri=9&submit=";
-        var descContent = 'Dear Chichi:\n here is a special gift car for u!';
-        var shareTitle = 'From:\n Paris';
+        var imgUrl = "http://www.hacker-noelle.com/10ve/logo.jpg";
+        var lineLink = "<?php echo "http://".$_SERVER ['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>";
+        var descContent = '亲爱的<?php echo $_GET["you"]; ?>：\n快打开卡片，感受 TA 的心意吧！';
+        var shareTitle = '<?php echo $_GET["me"];?>给您寄送了一张情人节卡片哟！';
         var appid = '';
          
         function shareFriend() {
