@@ -60,7 +60,7 @@
     <script>
     (function(){
     	//自动播放
-    	$('#car_audio').play();
+    	//$('#car_audio').play();
     	
         var canvas = $('#canvas');
 		
