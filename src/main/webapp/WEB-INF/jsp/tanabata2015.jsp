@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
 <head>
 <link rel="icon" type="image/gif" href="/chichi/resources/image/chichi.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
@@ -37,7 +37,7 @@
       <input placeholder="年：如2015" name="year" type="text" tabindex="3" required>
     </fieldset>
     <fieldset>
-      <input placeholder="月：如3" name="yue" type="text" tabindex="4" required>
+      <input placeholder="月：如4" name="yue" type="text" tabindex="4" required>
     </fieldset>
     <fieldset>
       <input placeholder="日：如9" name="ri" type="text" tabindex="4" required>
@@ -46,16 +46,16 @@
       <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">提交</button>
     </fieldset>
   </form>
-  <h4 class="STYLE1">如果您希望更多人终成眷属，就点击复制链接分享给朋友吧!</h4>
-  <a href="http://120.24.64.210/chichi/tanabata2015" target="_blank"><img src="http://120.24.64.210/chichi/resources/tanabata2015/logo.jpg" border="0"></a>
+  <h4 class="STYLE1">素材来自互联网，仅作学习使用！</h4>
+  <!-- <a href="http://120.24.64.210/chichi/tanabata2015" target="_blank"><img src="http://120.24.64.210/chichi/resources/tanabata2015/logo.jpg" border="0"></a> -->
 </div>
 <script>
         var imgUrl = "http://120.24.64.210/chichi/resources/tanabata2015/logo.jpg";
         var lineLink = "http://120.24.64.210/chichi/tanabata2015";
-        var descContent = '点击进入，设置您的个性情人节卡片，\n让你的TA感受你的心意！';
-        var shareTitle = '爱你一万年表白卡';
+        var descContent = 'Enter to make your card，\n Show your love to her.';
+        var shareTitle = 'Love forever';
         var appid = '';
-         
+        
         function shareFriend() {
             WeixinJSBridge.invoke('sendAppMessage',{
                 "appid": appid,
