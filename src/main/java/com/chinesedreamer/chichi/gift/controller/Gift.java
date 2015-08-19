@@ -16,21 +16,42 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class Gift {
 	
+	/**
+	 * 第一份礼物
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping(value = "firstGift", method = RequestMethod.GET)
 	public String firstGift(Model model){
 		return "firstGift";
 	}
 	
+	/**
+	 * 第一封情书
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping(value = "vowsOfLove", method = RequestMethod.GET)
 	public String vowsOfLove(Model model){
 		return "vowsOfLove";
 	}
 	
+	/**
+	 * 2015情人节设置页
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping(value = "tanabata2015", method = RequestMethod.GET)
 	public String tanabata2015(Model model){
 		return "tanabata2015";
 	}
 	
+	/**
+	 * 2015情人节展示页
+	 * @param model
+	 * @param request
+	 * @return
+	 */
 	@RequestMapping(value = "tanabata2015_dear", method = RequestMethod.GET)
 	public String tanabata2015Dear(Model model, HttpServletRequest request){
 		String me = request.getParameter("me");
@@ -48,5 +69,15 @@ public class Gift {
 		model.addAttribute("yue", yue);
 		model.addAttribute("ri", ri);
 		return "tanabata2015Dear";
+	}
+	
+	/**
+	 * 第二封情书，我的这132天
+	 * @param model
+	 * @return
+	 */
+	@RequestMapping(value="my132Days", method = RequestMethod.GET)
+	public String my132Days(Model model){
+		return "my132Days";
 	}
 }

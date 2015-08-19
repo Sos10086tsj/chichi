@@ -19,6 +19,9 @@
 		<div>
 			<a href="/chichi/tanabata2015">2015七夕礼物</a>
 		</div>
+		<div>
+			<a href="/chichi/my132Days">我的这132天</a>
+		</div>
 	</div>
 
 </body>
