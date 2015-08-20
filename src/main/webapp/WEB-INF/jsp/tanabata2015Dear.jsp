@@ -25,6 +25,9 @@
         </style>
 </head>
     <body>
+    <div style="display:none;">
+		<img src="/chichi/resources/tanabata2015/wechat-logo.jpg" />
+	</div>
 	<audio autoplay="autopaly" id="js_auto_play" src="http://120.24.64.210/chichi/resources/tanabata2015/Love-Music.mp3">
 					<!-- <source src="http://120.24.64.210/chichi/resources/tanabata2015/Love-Music.mp3" type="audio/mp3" /> -->
 			</audio>  	 

@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="icon" type="image/gif" href="/chichi/resources/image/chichi.ico">
+<script type="text/javascript" src="/chichi/resources/js/wechat.js" charset="utf-8"></script>
 <title>My 132 Days, wiht u</title>
     <style type="text/css">
 	body{margin-left: auto;margin-right: auto;background:#ffe;font-size:14px;overflow:auto;}
@@ -63,6 +64,9 @@
     </script>
 </head>
 <body>
+<div style="display:none;">
+<img src="/chichi/resources/tanabata2015/wechat-logo.jpg" />
+</div>
 <div id="myContent" style="text-align:center;overflow:auto;">
 </div>
 <div id="mrcToWrite" style="display:none;">
@@ -347,7 +351,7 @@ writeContent(true);
         var descContent = '我的132天';
         var shareTitle = '我的自述';
         var appid = '';
-         
+        
         function shareFriend() {
             WeixinJSBridge.invoke('sendAppMessage',{
                 "appid": appid,

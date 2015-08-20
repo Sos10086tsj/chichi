@@ -16,7 +16,9 @@
 </head>
 
 <body>
-
+<div style="display:none;">
+<img src="/chichi/resources/tanabata2015/wechat-logo.jpg" />
+</div>
   <div class="container">  
  <form id="contact" action="/chichi/tanabata2015_dear" method="get">
     <h3>七夕我爱你</h3>
