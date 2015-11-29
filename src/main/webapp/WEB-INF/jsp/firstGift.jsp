@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="icon" type="image/gif" href="/chichi/resources/image/chichi.ico">
+<link rel="icon" type="image/gif" href="/chichi/resources/image/chichi.ico"/>
 <title>Story of Chichi & Paris</title>
 
 <style type="text/css">
@@ -14,7 +14,7 @@
 }
 </style>
 
-<link href="/chichi/resources/css/default.css" type="text/css" rel="stylesheet">
+<link href="/chichi/resources/css/default.css" type="text/css" rel="stylesheet"/>
 <script type="text/javascript" src="/chichi/resources/js/jquery.js"></script>
 <script type="text/javascript" src="/chichi/resources/js/garden.js"></script>
 <script type="text/javascript" src="/chichi/resources/js/functions.js"></script>

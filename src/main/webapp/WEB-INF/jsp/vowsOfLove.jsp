@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="icon" type="image/gif" href="/chichi/resources/image/chichi.ico">
+<link rel="icon" type="image/gif" href="/chichi/resources/image/chichi.ico"/>
 <title>Vows of Love</title>
     <style type="text/css">
 	body{margin-left: auto;margin-right: auto;background:#ffe;font-size:12px;overflow:auto;}

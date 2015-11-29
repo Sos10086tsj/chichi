@@ -22,6 +22,9 @@
 		<div>
 			<a href="/chichi/my132Days">我的这132天</a>
 		</div>
+		<div>
+			<a href="/chichi/qingshu20151129">情书20151129</a>
+		</div>
 	</div>
 
 </body>

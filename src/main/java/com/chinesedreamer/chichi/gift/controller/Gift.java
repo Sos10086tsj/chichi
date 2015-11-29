@@ -80,4 +80,14 @@ public class Gift {
 	public String my132Days(Model model){
 		return "my132Days";
 	}
+	
+	/**
+	 * qingshu20151129
+	 * @param model
+	 * @return
+	 */
+	@RequestMapping(value="qingshu20151129", method = RequestMethod.GET)
+	public String qingshu20151129(Model model){
+		return "qingshu20151129";
+	}
 }

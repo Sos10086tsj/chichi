@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="icon" type="image/gif" href="/chichi/resources/image/chichi.ico">
+<link rel="icon" type="image/gif" href="/chichi/resources/image/chichi.ico"/>
 <script type="text/javascript" src="/chichi/resources/js/wechat.js" charset="utf-8"></script>
 <title>My 132 Days, wiht u</title>
     <style type="text/css">
