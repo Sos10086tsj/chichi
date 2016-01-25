@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class Gift {
 	
 	/**
-	 * 第一份礼物
+	 * 第一份礼�
 	 * @param model
 	 * @return
 	 */
@@ -27,7 +27,7 @@ public class Gift {
 	}
 	
 	/**
-	 * 第一封情书
+	 * 第一封情�
 	 * @param model
 	 * @return
 	 */
@@ -72,7 +72,7 @@ public class Gift {
 	}
 	
 	/**
-	 * 第二封情书，我的这132天
+	 * 第二封情书，我的�32�
 	 * @param model
 	 * @return
 	 */
@@ -86,8 +86,8 @@ public class Gift {
 	 * @param model
 	 * @return
 	 */
-	@RequestMapping(value = "birthday2016", method = RequestMethod.GET)
-	public String birthday2016(Model model){
-		return  "birthday2016";
+	@RequestMapping(value="qingshu20151129", method = RequestMethod.GET)
+	public String qingshu20151129(Model model){
+		return "qingshu20151129";
 	}
 }

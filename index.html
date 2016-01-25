@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<title>HTML5+jQuery制作温馨浪漫爱心表白动画特效(我们程序员也有浪漫的时候)-psd素材网</title>-->
+<title>Story of Chichi & Paris</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">* story of Chichi & Paris</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Boy name = <span class="keyword">Paris</span><br />
+			Girl name = <span class="keyword">Chichi</span><br />
+			<br />
+			<span class="comments">// April 9, 2015 10:55:29 </span><br />
+			故事的开始并没有童话中的美丽邂逅，更多的是意外。<br />
+			所幸的是，出于礼貌，没有忽视QQ消息。<br />
+			简单的QQ聊天，简单的微信，简单的开始。<br />
+			<br />
+			<span class="comments">// April 13, 2015 17:36:00 </span><br />
+			约莫几分钟后，我第一次见到了这个叫Chichi的女孩。<br/>
+			第一次一起吃饭，第一次约会看电影。她的侧脸很漂亮。<br/>
+			<br />
+			<span class="comments">// she is a lovely girl </span><br />
+			她谈不上瘦，也没有很胖，虽然一直在努力减肥，希望有一天梦想成真。<br />
+			她是一个喜欢流浪的女孩，去看这万千百态。<br />
+			<br />
+			<span class="comments">// she's dream </span><br />
+			她是个乖学生，用前20年享受着学习的艰辛与快乐。<br/>
+			她一个人来到宁波这个算不得熟悉的城市，坚强地为了自己的梦想努力着。<br />
+			<br />
+			<span class="comments">// life is a story without endless </span><br />
+			从陌生到熟悉，有些故事在时间的河流中悄然湮灭，剩下的在努力守护着彼此。<br />
+			有人陪伴，是一种幸运。珍惜身边的人，是保留幸运唯一的方式。<br />
+			<br />
+			<span class="comments">// a gift for girl </span><br />
+			这是一份简单的小礼物，希望她会喜欢。<br />
+			我要继续记录这个故事。直到……我们都已老去。<br />
+			<br />
+			<span class="comments">// May 7, 2015 </span><br />
+			今天我要向这个可爱的女孩表白，然后送她这份礼物。<br />
+			<br />
+			<span class="comments">// my love </span><br />
+			<span class="placeholder"/>不管将来如何</span><br />
+			<span class="placeholder"/>又会经历什么</span><br />
+			<span class="placeholder"/>我都愿意陪你一路走下去！</span><br />
+			<br />
+		<!--
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*2014—01-01,</span><br />
+			<span class="space"/><span class="comments">*2014-01-04.</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Boy name = <span class="keyword">Mr</span> LI<br />
+			Girl name = <span class="keyword">Mrs</span> ZHANG<br />
+			<span class="comments">// Fall in love river. </span><br />
+			The boy love the girl;<br />
+			<span class="comments">// They love each other.</span><br />
+			The girl loved the boy;<br />
+			<span class="comments">// AS time goes on.</span><br />
+			The boy can not be separated the girl;<br />
+			<span class="comments">// At the same time.</span><br />
+			The girl can not be separated the boy;<br />
+			<span class="comments">// Both wind and snow all over the sky.</span><br />
+			<span class="comments">// Whether on foot or 5 kilometers.</span><br />
+			<span class="keyword">The boy</span> very <span class="keyword">happy</span>;<br />
+			<span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br />
+			<span class="placeholder"/><span class="comments">// Whether it is right now</span><br />
+			<span class="placeholder"/><span class="comments">// Still in the distant future.</span><br />
+			<span class="placeholder"/>The boy has but one dream;<br />
+			<span class="comments">// The boy wants the girl could well have been happy.</span><br />
+			<br>
+			<br>
+			I want to say:<br />
+			Baby, I love you forever;<br />-->
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Dear my girl, time since I met u
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					Love u forever! <br/>
+					<div class="signature">- Paris</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="copyright">
+		<a href="#">....</a><br />
+		<a href="#">....</a><br />
+		
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2015, 3, 9);
+together.setHours(10);
+together.setMinutes(55);
+together.setSeconds(29);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+
+</body>
+</html>

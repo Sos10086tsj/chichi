@@ -11,19 +11,19 @@
 
 	<div>
 		<div>
-			<a href="/chichi/firstGift">第一份礼物</a>
+			<a href="/chichi/firstGift">第一份礼�/a>
 		</div>
 		<div>
-			<a href="/chichi/vowsOfLove">第一封情书</a>
+			<a href="/chichi/vowsOfLove">第一封情�/a>
 		</div>
 		<div>
 			<a href="/chichi/tanabata2015">2015七夕礼物</a>
 		</div>
 		<div>
-			<a href="/chichi/my132Days">我的这132天</a>
+			<a href="/chichi/my132Days">我的�32�/a>
 		</div>
 		<div>
-			<a href="/chichi/birthday2016">2016生日礼物</a>
+			<a href="/chichi/qingshu20151129">情书20151129</a>
 		</div>
 	</div>
 
