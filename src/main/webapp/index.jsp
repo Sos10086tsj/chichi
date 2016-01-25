@@ -22,6 +22,9 @@
 		<div>
 			<a href="/chichi/my132Days">我的这132天</a>
 		</div>
+		<div>
+			<a href="/chichi/birthday2016">2016生日礼物</a>
+		</div>
 	</div>
 
 </body>

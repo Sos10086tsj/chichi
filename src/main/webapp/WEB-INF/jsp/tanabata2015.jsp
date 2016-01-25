@@ -3,9 +3,9 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
 <head>
-<link rel="icon" type="image/gif" href="/chichi/resources/image/chichi.ico">
+<link rel="icon" type="image/gif" href="/chichi/resources/image/chichi.ico"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>Chinese Valentine's Day Gift</title>
     <link rel="stylesheet" href="/chichi/resources/tanabata2015/css/style.css" media="screen" type="text/css" />
     <style type="text/css">
